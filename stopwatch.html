@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    
+    <title>Derek Nguyen</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <center>
+      <img src="images/nametitle.png" class="img-rounded titleimage" alt="Cinque Terre" width="500" height="200" style="position:relative; top:50px">
+    </center>
+
+    <ul class="nav nav-pills navbar-custom">
+      <li><a href="home.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li class="dropdown active">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Tools</a>
+          <ul class="dropdown-menu">
+            <li><a href="http://localhost/BMI.php">BMI Calculator</a></li>
+            <li><a href="WClock.html">World Clock</a></li>
+            <li><a href="stopwatch.html">Stopwatch</a></li>
+          </ul>
+      </li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <div id="stopwatch">
+      <div id="timeDiv">
+        <span id="time"></span>
+      </div>
+      <button id="startBtn" type="button" class="btn btn-success">Start</button>
+      <button id="resetBtn" type="button" class="btn btn-warning">Reset</button>
+    </div>
+
+    <script>
+      var Stopwatch = function(){
+        // time of last start (0 if paused)
+        var startTime = 0;
+
+        // ms of time when clock was last stopped
+        var recentStop = 0;
+
+        var curTime = function(){
+          var d = new Date();
+          return d.getTime();
+        }
+
+        // Public methods
+        this.start = function(){
+          if(!startTime)
+            startTime = curTime();
+        }
+
+        this.time = function(){
+          if(startTime)
+            return recentStop + curTime() - startTime;
+          else
+            return recentStop;
+        }
+
+        this.stop = function(){
+          if(startTime)
+            recentStop = recentStop + curTime() - startTime;
+          startTime = 0;
+        }
+
+        this.reset = function(){
+          recentStop = 0;
+          startTime = 0;
+        }
+      }
+
+      var time;
+      var watch = new Stopwatch();
+      var clockInterval;
+
+      function padZeros(num, len){
+        var s = "00" + num;
+        return s.substr(s.length - len);
+      }
+
+      function formatTime(time){
+        var m = 0;
+        var s = 0;
+        var ms = 0;
+
+        m = Math.floor(time/(60*1000));
+        time = time % (60*1000);
+        s = Math.floor(time/1000);
+        ms = time%1000;
+
+        var formattedTime = padZeros(m, 2) + ':' + padZeros(s, 2) + ':' + padZeros(ms, 3);
+        return formattedTime;
+      }
+
+      function showTime(){
+        time = document.getElementById('time');
+        updateTime();
+      }
+
+      function updateTime(){
+        time.innerHTML = formatTime(watch.time());
+      }
+
+      function startClock(){
+        clockInterval = setInterval(updateTime, 1);
+        watch.start();
+      }
+
+      function stopClock(){
+        watch.stop();
+        clearInterval(clockInterval);
+      }
+
+      function resetClock(){
+        stopClock();
+        watch.reset();
+        updateTime();
+      }
+
+      $(document).ready(function(){
+        showTime();
+      });
+
+      // toggle text and functionality of start/stop button
+      $('#startBtn').click(function(){
+        var startBtn = document.getElementById('startBtn');
+        if(startBtn.innerHTML == "Start"){
+          startClock();
+          startBtn.innerHTML = "Stop";
+          $('#startBtn').removeClass("btn-success");
+          $('#startBtn').addClass("btn-danger");
+        }
+        else if(startBtn.innerHTML == "Stop"){
+          stopClock();
+          startBtn.innerHTML = "Start";
+          $('#startBtn').removeClass("btn-danger");
+          $('#startBtn').addClass("btn-success");
+        }
+      });
+
+      $('#resetBtn').click(function() {
+        resetClock();
+        var resetBtn = document.getElementById('resetBtn');
+        var startBtn = document.getElementById('startBtn');
+        if(startBtn.innerHTML == "Stop"){
+          startBtn.innerHTML = "Start";
+          $('#startBtn').removeClass("btn-danger");
+          $('#startBtn').addClass("btn-success");
+        }
+      });
+
+      // start/stop clock with spacebar
+      $(document).keydown(function(e){
+        var key = e.which;
+        if(key == "32"){
+          var startBtn = document.getElementById('startBtn');
+          if(startBtn.innerHTML == "Start"){
+            startClock();
+            startBtn.innerHTML = "Stop";
+            $('#startBtn').removeClass("btn-success");
+            $('#startBtn').addClass("btn-danger");
+          }
+          else if(startBtn.innerHTML == "Stop"){
+            stopClock();
+            startBtn.innerHTML = "Start";
+            $('#startBtn').removeClass("btn-danger");
+            $('#startBtn').addClass("btn-success");
+          }
+        }
+      });
+    </script>
+
+    <center id="contact">
+      <div class="icon">
+        <a href="contact.html"><img src="images/mail.png" class="img-circle" width="25" height="25" id="mail"></a>
+        <a href="http://www.github.com/tincan24"><img src="images/github.png" class="img-circle" width="25" height="25" id="github"></a>
+        <a href="http://www.linkedin.com/in/dereknguyen24"><img src="images/linkedin.png" class="img-circle" width="27" height="27" id="linkedin"></a>
+        <a href="http://www.youtube.com/user/24tincan/videos"><img src="images/youtube.png" class="img-circle" width="26" height="26"></a>
+      </div>
+      <p id="contactmsg">ngderek24@gmail.com<br>Get in touch and check out my work!<br>&copy Derek Nguyen 2015. All rights reserved.</p>
+    </center>
+  </body>
+</html>
