@@ -419,7 +419,7 @@ hr{
 }
 
 #stopwatch{
-	margin-top: 50px;
+	margin-top: 40px;
 	text-align: center;
 }
 
@@ -439,4 +439,13 @@ hr{
 #resetBtn{
 	font-size: 24px;
 	margin-left: 20px;
+}
+
+#watchTitle{
+	font: bold 50px "Trebuchet MS", Helvetica, sans-serif;
+	color: #333;
+	margin: .2em 0 .4em 0;
+	letter-spacing: -2px;
+	text-align: center;
+	margin-bottom: 30px;
 }
