@@ -255,7 +255,7 @@ hr{
 }
 
 #skills{
-	padding-bottom: 600px;
+	padding-bottom: 680px;
 }
 
 #skillsleft{
@@ -289,103 +289,13 @@ hr{
 	margin-left: 100px;
 }
 
-#cprog{
+.language{
 	margin-right: 150px;
 	width: 40%;
 	float:right;
 }
 
-#javaprog{
-	margin-right: 150px;
-	width: 40%;
-	float:right;
-}
-
-#htmlprog{
-	margin-right: 150px;
-	width: 40%;
-	float:right;
-}
-
-#cssprog{
-	margin-right: 150px;
-	width: 40%;
-	float:right;
-}
-
-#jsprog{
-	margin-right: 150px;
-	width: 40%;
-	float:right;
-}
-
-#phpprog{
-	margin-right: 150px;
-	width: 40%;
-	float:right;
-}
-
-#pyprog{
-	margin-right: 150px;
-	width: 40%;
-	float:right;
-}
-
-#bashprog{
-	margin-right: 150px;
-	width: 40%;
-	float:right;
-}
-
-#sqlprog{
-	margin-right: 150px;
-	width: 40%;
-	float:right;
-}
-
-#vsprog{
-	margin-right: 130px;
-	width: 40%;
-	float:right;
-}
-
-#eclipseprog{
-	margin-right: 130px;
-	width: 40%;
-	float:right;
-}
-
-#msoffprog{
-	margin-right: 130px;
-	width: 40%;
-	float:right;
-}
-
-#asprog{
-	margin-right: 130px;
-	width: 40%;
-	float:right;
-}
-
-#adobeprog{
-	margin-right: 130px;
-	width: 40%;
-	float:right;
-}
-
-#arduinoprog{
-	margin-right: 130px;
-	width: 40%;
-	float:right;
-}
-
-#st2prog{
-	margin-right: 130px;
-	width: 40%;
-	float:right;
-}
-
-#vmboxprog{
+.tool{
 	margin-right: 130px;
 	width: 40%;
 	float:right;
