@@ -166,7 +166,7 @@ hr{
 }
 
 .projtitle{
-	font: 40px "Trebuchet MS", Helvetica, sans-serif;
+	font: 30px "Trebuchet MS", Helvetica, sans-serif;
 }
 
 .projinfo{
@@ -248,7 +248,7 @@ hr{
 }
 
 #langtitle{
-	margin-top: 70px;
+	margin-top: 50px;
 	margin-bottom: 40px;
 	font: 50px "Trebuchet MS", Helvetica, sans-serif;
 }
@@ -302,7 +302,7 @@ hr{
 
 #interestsect{
 	background-color: #004B4B;
-	margin-top: 60px;
+	margin-top: 100px;
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
@@ -357,4 +357,8 @@ hr{
 	letter-spacing: -2px;
 	text-align: center;
 	margin-bottom: 30px;
+}
+
+#audioonlylink {
+	color: yellow;
 }
