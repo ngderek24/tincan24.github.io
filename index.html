@@ -20,21 +20,82 @@
     </center>
 
     <div id="intro">
-        <img src="images/me.jpg" id="face" class="img-circle" width="125" height="125">
-        <p id="introtext">
-          Hello, my name is Derek Nguyen and I am a computer science undergraduate at the University of California, Los Angeles. I love to learn new concepts, collaborate with friends on interesting projects, and play sports and games. Take a look around and leave a feedback.
-        </p>
+      <img src="images/me.jpg" id="face" class="img-circle" width="125" height="125">
+      <p id="introtext">
+        Hello, my name is Derek Nguyen and I am a computer science undergraduate at the University of California, Los Angeles. I love to learn new concepts, collaborate with friends on interesting projects, and play sports and games. Take a look around and leave a feedback.
+      </p>
+    </div>
+
+    <div id="experiencesection">
+      <p id="experiencetitle">Experience</p>
+      <div id="experiences">
+        <div class="experience">
+          <img src="images/pdgc.png">
+          <div class="experienceDesc">
+            <div class="listItemTitle">Principal Development Group Consulting</div>
+            <div class="experiencePosition">Software Engineering Intern | June 2016 - August 2016</div>
+            <table class="table">
+              <tbody>
+                <tr>
+                  <td>Designed and built components for a film budgeting organizer that allows companies to monitor costs and incentives of their movies and TV shows through their life cycle</td>
+                </tr>
+                <tr>
+                  <td>Full-stack web development using AngularJS, Bootstrap, Java, Spring MVC Framework, Hibernate ORM, Jackson, Subversion, Oracle PostgreSQL, and Trello</td>
+                </tr>
+                <tr>
+                  <td>Worked under project manager to improve product's design, usability, and efficiency</td>
+                </tr>
+                <tr>
+                  <td>Iteratively performed code reviews and tests on working product to find, document, and fix bugs</td>
+                </tr>
+                <tr>
+                  <td>Ensured data consistency in database after each transaction to prevent mysterious data corruption</td>
+                </tr>
+                <tr>
+                  <td>Daily scrum meeting with intern team and project manager to establish goals and enhance collaboration</td>
+                </tr>
+                <tr>
+                  <td>Pair programming with other interns to learn from each other and cooperatively implement product's components</td>
+                </tr>
+                <tr>
+                  <td>Presented working product with intern team to PDGC employees</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="experience">
+          <img src="images/ucla.png">
+          <div class="experienceDesc">
+            <div class="listItemTitle">UCLA Space Environment Model Group</div>
+            <div class="experiencePosition">Student Developer | October 2016 - December 2016</div>
+            <table class="table">
+              <tbody>
+                <tr>
+                  <td>Prepared inputs to a simulation of radiation belts around Earth using Matlab scripts</td>
+                </tr>
+                <tr>
+                  <td>Produced graphical results of simulation</td>
+                </tr>
+                <tr>
+                  <td>Maintained documentation for scripts and test procedures</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div id="projectintro">
-      <p id="myproject">Projects</p>
+      <p id="projecttitle">Projects</p>
       <div class="projects">
         <div class="oneproj">
           <div class="view fifth-effect">  
             <a href="http://github.com/tincan24/audio-only-youtube"><img src="images/novideo.jpg" /></a>  
             <div class="mask"></div>  
           </div>
-          <h1 class="projtitle">Audio-Only Youtube</h1>
+          <h1 class="listItemTitle">Audio-Only Youtube</h1>
           <p class="projinfo">August 2016<br>Languages: Javascript</p>
           <p class="projdesc">Audio-Only Youtube is a Mozilla Firefox extension built with the WebExtensions cross-browser system for creating add-ons. It allows the user to toggle a black overlay on top of the Youtube video panel, leaving the audio unaffected. I created this add-on to prevent myself from getting distracted by Youtube video content while still allowing me to listen to the audio. If you are interested in using this add-on, you can find it <a id="audioonlylink" href="http://addons.mozilla.org/addon/audioonlyyoutube/">here</a>.</p>
         </div>
@@ -43,7 +104,7 @@
             <a href="http://www.youtube.com/watch?v=BEfRslG7GNo"><img src="images/passManager.png" /></a>  
             <div class="mask"></div>  
           </div>
-          <h1 class="projtitle">Password Manager</h1>
+          <h1 class="listItemTitle">Password Manager</h1>
           <p class="projinfo">Summer 2015<br>Languages: Java</p>
           <p class="projdesc">Password Manager is a desktop application built with Eclipse Windows Builder and written in Java. It allows the user to insert, delete, update, and search for his/her usernames and passwords with the easy-to-use tabbed interface. The information is kept through SQLite Manager. The app also has a random password generator tool.</p>
         </div>
@@ -52,7 +113,7 @@
             <a href="http://www.youtube.com/watch?v=bfvTEH7VtpA&feature=youtu.be"><img src="images/inkitchen.jpg" /></a>  
             <div class="mask"></div>  
           </div>
-          <h1 class="projtitle">inKitchen</h1>
+          <h1 class="listItemTitle">inKitchen</h1>
           <p class="projinfo">HackSC 2014, November 2014<br>Languages: HTML, CSS, Javascript</p>
           <p class="projdesc">inKitchen is a web application that takes in the user's available food ingredients and generates a list of recipes corresponding to those ingredients. Our 4-member team designed this web application with the idea that college students might be able to use it for leftover food in the refrigerator. I mainly implemented the user interface and some Javascript for HTML content effects.</p>
         </div>
@@ -61,7 +122,7 @@
             <a href="http://github.com/tincan24/tincan24.github.io"><img src="images/personal.jpg" /></a>  
             <div class="mask"></div>  
           </div>
-          <h1 class="projtitle">Personal Website</h1>
+          <h1 class="listItemTitle">Personal Website</h1>
           <p class="projinfo">Summer 2015<br>Languages: HTML, CSS, Javascript, PHP</p>
           <p class="projdesc">I created a personal website as a side project to present my work and some tools that I wanted to make with Javascript and PHP. I used some components from Bootstrap 3 and an image hover effect from Alessio Atzeni.</p>
         </div>
@@ -70,7 +131,7 @@
             <a href="http://github.com/tincan24/Steganography"><img src="images/stegano.jpg" /></a>  
             <div class="mask"></div>  
           </div>
-          <h1 class="projtitle">Steganography</h1>
+          <h1 class="listItemTitle">Steganography</h1>
           <p class="projinfo">Summer 2015<br>Languages: Java</p>
           <p class="projdesc">Steganography is a desktop application built with Eclipse Windows Builder. It allows the user to hide secret messages within an png image and also retrieve hidden messages and output them to a text file. This technique is done through bit manipulation of the RGB values of the pixels in the image.</p>
         </div>
@@ -79,7 +140,7 @@
             <a href="http://www.youtube.com/watch?v=7BX0lQUwj4Q"><img src="images/interviewPDF.png" /></a>  
             <div class="mask"></div>  
           </div>
-          <h1 class="projtitle">Interview Webpages to PDF</h1>
+          <h1 class="listItemTitle">Interview Webpages to PDF</h1>
           <p class="projinfo">Summer 2015<br>Languages: Python</p>
           <p class="projdesc">This Python script will obtain all of the links of past interviews located at the provided url in the script, and it will download these pages and save them as PDF files. The script uses packages from BeautifulSoup4, httplib2, and pdfcrowd, all of which are free. I wrote this script because I thought it would be useful for me in the future when I am preparing for interviews and also to practice my Python programming.</p>
         </div>
@@ -88,7 +149,7 @@
             <a href="http://www.youtube.com/watch?v=mJUDMNhdLPU"><img src="images/database.jpg" /></a>  
             <div class="mask"></div>  
           </div>
-          <h1 class="projtitle">Movie Database Search</h1>
+          <h1 class="listItemTitle">Movie Database Search</h1>
           <p class="projinfo">CS 143: Database Systems, Spring 2015<br>Languages: C++, PHP</p>
           <p class="projdesc">My partner and I implemented a B+ tree index for a movie database as a class project for CS143 at UCLA. This index supports loading tuples from input files, "select" queries on attributes with conditional "where" clauses. Insert functions are implemented recursively in order to handle node overflows at both leaf and non-leaf levels. It is a generic template that works for any node of size less than or equal to 81 pointers. We also created the UI for inserting/searching movies/actors.</p>
         </div>
@@ -97,7 +158,7 @@
             <a href="http://github.com/tincan24/Micromouse"><img src="images/micromouse.jpg" /></a>  
             <div class="mask"></div>  
           </div>
-          <h1 class="projtitle">Micromouse</h1>
+          <h1 class="listItemTitle">Micromouse</h1>
           <p class="projinfo">October 2014 - May 2015<br>Languages: C++ (Arduino)</p>
           <p class="projdesc">Micromouse is an autonomous maze-solving robot competition. The mouse at one corner of a 16x16 maze, where it is allowed to explore the maze using IR sensors. The mouse then finds the shortest path to the center of the maze. On the hardware side, the mouse involves designing the circuit, soldering elements, and calibrating sensors. As for the software, we utilize physical components, optimize data structures, and implement maze-solving algorithms.</p>
         </div>
@@ -106,7 +167,7 @@
             <a href="http://www.youtube.com/watch?v=D0Bwg2PZn8c"><img src="images/aria.jpg" /></a>  
             <div class="mask"></div>  
           </div>
-          <h1 class="projtitle">Aria</h1>
+          <h1 class="listItemTitle">Aria</h1>
           <p class="projinfo">LA HACKS 2014, April 2014<br>Languages: HTML, CSS, Javascript</p>
           <p class="projdesc">Aria is an web application that plays sounds and displays images based on the mood of the user. There is also a textbox for users to write about their problems and delete it once they are done as a way of relieving their stress. This was the first web app that my colleagues and I made, and I learned how to incorporate sound and images into the webpage.</p>
         </div>
@@ -115,7 +176,7 @@
             <a href="http://www.youtube.com/watch?v=1ECs1lKsGOM"><img src="images/bugblast.jpg" /></a>  
             <div class="mask"></div>  
           </div>
-          <h1 class="projtitle">BugBlast</h1>
+          <h1 class="listItemTitle">BugBlast</h1>
           <p class="projinfo">CS 32: Introduction to Computer Science II, Winter 2014<br>Languages: C++</p>
           <p class="projdesc">BugBlast is an arcade monster-killing game where the player has to defeat monsters using poisonous sprays, given as a project in CS32 at UCLA. I implemented the gameplay code using a given framework and specifications from the professor. I applied core concepts of C++, such as using depth-first search algorithm to create effective AI, using inheritance and polymorphism to implement object-oriented programming, and managing memory-allocation and STL tools.</p>
         </div>

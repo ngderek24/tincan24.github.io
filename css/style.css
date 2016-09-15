@@ -143,15 +143,14 @@ hr{
 	position: relative;
 	margin-top: 50px;
 	background-color: #195DD1;
-	padding-top: 20px;
+	padding-top: 50px;
 	padding-bottom: 20px;
 	color: white;
 }
 
-#myproject{
+#projecttitle{
 	text-align: center;
 	position: relative;
-	margin-top: 40px;
 	font: 60px "Trebuchet MS", Helvetica, sans-serif;
 }
 
@@ -165,7 +164,7 @@ hr{
 	margin-bottom: 100px;
 }
 
-.projtitle{
+.listItemTitle{
 	font: 30px "Trebuchet MS", Helvetica, sans-serif;
 }
 
@@ -250,7 +249,7 @@ hr{
 #langtitle{
 	margin-top: 50px;
 	margin-bottom: 40px;
-	font: 50px "Trebuchet MS", Helvetica, sans-serif;
+	font: 60px "Trebuchet MS", Helvetica, sans-serif;
 }
 
 #skills{
@@ -308,7 +307,7 @@ hr{
 }
 
 #intereststitle{
-	font: 50px "Trebuchet MS", Helvetica, sans-serif;
+	font: 60px "Trebuchet MS", Helvetica, sans-serif;
 	color: white;
 }
 
@@ -361,4 +360,32 @@ hr{
 
 #audioonlylink {
 	color: yellow;
+}
+
+#experiencesection {
+	padding-top: 50px;
+}
+
+#experiencetitle {
+	text-align: center;
+	position: relative;
+	font: 60px "Trebuchet MS", Helvetica, sans-serif;
+	margin-bottom: 50px;
+}
+
+.experiencePosition {
+	font: 20px "Trebuchet MS", Helvetica, sans-serif;
+	font-style: italic;
+}
+
+.experience {
+	width: 70%;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+
+.experienceDesc {
+	width: 75%;
+	display: inline-block;
+	margin-left: 20px;
 }
