@@ -246,6 +246,7 @@ hr{
 	margin-top: 50px;
 	margin-bottom: 40px;
 	font: 60px "Trebuchet MS", Helvetica, sans-serif;
+	text-align: center;
 }
 
 #skills{
@@ -305,6 +306,7 @@ hr{
 #intereststitle{
 	font: 60px "Trebuchet MS", Helvetica, sans-serif;
 	color: white;
+	text-align: center;
 }
 
 #freetime{
