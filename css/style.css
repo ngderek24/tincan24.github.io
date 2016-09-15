@@ -250,16 +250,17 @@ hr{
 }
 
 #skills{
-	padding-bottom: 680px;
+	margin-bottom: 40px;
 }
 
-#skillsleft{
-	float:left; 
+#skillsleft{ 
+	float: left;
+	display: inline-block;
 	width: 50%;
 }
 
 #skillsright{
-	float:right; 
+	display: inline-block;
 	width: 50%;
 }
 
@@ -298,7 +299,6 @@ hr{
 
 #interestsect{
 	background-color: #004B4B;
-	margin-top: 100px;
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
