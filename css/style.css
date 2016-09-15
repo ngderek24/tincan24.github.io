@@ -22,7 +22,7 @@
     	table-layout: fixed;
     	float:none;
 	}
-} 
+}
 
 .titleimage{
 	margin-top: 20px;
@@ -142,17 +142,17 @@ hr{
 #projectintro{
 	position: relative;
 	margin-top: 50px;
-	background-image: url("../images/bg.jpg");
-	background-size: cover;
-	padding-top: 200px;
-	padding-bottom: 200px;
+	background-color: #195DD1;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: white;
 }
 
 #myproject{
-	color: white;
+	text-align: center;
 	position: relative;
 	margin-top: 40px;
-	font: 50px "Trebuchet MS", Helvetica, sans-serif;
+	font: 60px "Trebuchet MS", Helvetica, sans-serif;
 }
 
 .projects{
@@ -166,8 +166,7 @@ hr{
 }
 
 .projtitle{
-	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-	font-weight: bold;
+	font: 40px "Trebuchet MS", Helvetica, sans-serif;
 }
 
 .projinfo{
