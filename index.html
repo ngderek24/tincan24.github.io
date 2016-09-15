@@ -344,19 +344,54 @@
         <p id="intereststitle">Interests</p>
       </center>
       <p id="freetime">In my free time, I like to:</p>
-      <p class="interests">Play sports (Tennis, Basketball, Swimming)</p>
-      <p class="interests">Play video games</p>
-      <p class="interests">Socialize with friends</p>
-      <p class="interests">Learn new programming skills</p>
+      <div class="interests">Play sports
+        <button class="collapseBtn" data-toggle="collapse" data-target="#sports"><span class="glyphicon glyphicon-menu-down"></span></button>
+        <div id="sports" class="collapse">
+          <div class="interestListItem">Tennis</div>
+          <div class="interestListItem">Basketball</div>
+          <div class="interestListItem">Swimming</div>
+        </div>
+      </div>
+      <div class="interests">Play video games
+        <button class="collapseBtn" data-toggle="collapse" data-target="#videogames"><span class="glyphicon glyphicon-menu-down"></span></button>
+        <div id="videogames" class="collapse">
+          <div class="interestListItem">League of Legends</div>
+          <div class="interestListItem">Hearthstone</div>
+          <div class="interestListItem">Counter Strike</div>
+          <div class="interestListItem">Starcraft II</div>
+        </div>
+      </div>
+      <div class="interests">Socialize with friends
+        <button class="collapseBtn" data-toggle="collapse" data-target="#hobbies"><span class="glyphicon glyphicon-menu-down"></span></button>
+        <div id="hobbies" class="collapse">
+          <div class="interestListItem">Movies</div>
+          <div class="interestListItem">Food & deserts</div>
+          <div class="interestListItem">Rock climbing</div>
+          <div class="interestListItem">Beach biking</div>
+          <div class="interestListItem">Kayaking</div>
+          <div class="interestListItem">Billiards</div>
+          <div class="interestListItem">Board games</div>
+        </div>
+      </div>
+      <div class="interests">Improve my programming skills
+        <button class="collapseBtn" data-toggle="collapse" data-target="#programminginterest"><span class="glyphicon glyphicon-menu-down"></span></button>
+        <div id="programminginterest" class="collapse">
+          <div class="interestListItem">LeetCode OJ</div>
+          <div class="interestListItem">Geeksforgeeks</div>
+          <div class="interestListItem">r/programming (Reddit)</div>
+          <div class="interestListItem">Coursera</div>
+          <div class="interestListItem">Google Codelabs</div>
+        </div>
+      </div>
     </div>
 
-    <center id="contact">
+    <div id="contact">
       <div class="icon">
         <a href="http://www.github.com/tincan24"><img src="images/github.png" class="img-circle" width="25" height="25" id="github"></a>
         <a href="http://www.linkedin.com/in/dereknguyen24"><img src="images/linkedin.png" class="img-circle" width="27" height="27" id="linkedin"></a>
         <a href="http://www.youtube.com/user/24tincan/videos"><img src="images/youtube.png" class="img-circle" width="26" height="26"></a>
       </div>
       <p id="contactmsg">ngderek24@gmail.com<br>Get in touch and check out my work!<br>&copy Derek Nguyen 2016. All rights reserved.</p>
-    </center>
+    </div>
   </body>
 </html>

@@ -64,20 +64,16 @@
 }
 
 #contactmsg{
-	position:relative;
-	top: 210px;
 	font-family: "Trebuchet MS";
 }
 
 #contact{
-	position: relative;
-	margin-top: -100px;
+	margin-top: 60px;
+	text-align: center;
 }
 
 .icon{
 	display: inline-block;
-	position: relative;
-	top: 200px;
 }
 
 #wclocktitle{
@@ -324,6 +320,7 @@ hr{
 	font: 15px "Trebuchet MS", Helvetica, sans-serif;
 	font-style: italic;
 	font-weight: bold;
+	margin-bottom: 10px;
 }
 
 #stopwatch{
@@ -388,4 +385,13 @@ hr{
 	width: 75%;
 	display: inline-block;
 	margin-left: 20px;
+}
+
+.collapseBtn {
+	background-color: #004B4B;
+	border: none;
+}
+
+.interestListItem {
+	text-indent: 3em;
 }
